@@ -1,0 +1,22 @@
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo">Squirrel News</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="{{ 'active' if request.endpoint == 'index' else '' }}">
+								<a href="/">Squirrel News</a>
+							</li>
+							<li class="{{ 'active' if request.endpoint == 'about' else '' }}">
+								<a href="/about">About Us</a>
+							</li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
