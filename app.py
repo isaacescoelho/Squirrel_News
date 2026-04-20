@@ -8,7 +8,9 @@ all_articles = requests.get("https://api.npoint.io/11ad36772c8ebffa8e28").json()
 
 @app.route('/')
 def index():
-    return render_template('index.html', main_article=all_articles["main-headline"], rest_of_articles=all_articles["other-stories"])
+    other_articles = sorted(all_articles["other-stories"], key=lambda x: x["id"])[::-1]
+    print(other_articles)
+    return render_template('index.html', main_article=all_articles["main-headline"], rest_of_articles=other_articles)
 
 @app.route('/about')
 def about():
