@@ -25,5 +25,13 @@ def article(article_id):
 
     return render_template('article.html', article=article)
 
+@app.route('/search')
+def search():
+    query = request.args.get('article_to_find').lower()
+    all_stories = all_articles["other-stories"] + [all_articles["main-headline"]]
+    query_articles = [story for story in all_stories if query in story["title"].lower()]
+
+    return render_template('search.html', query=query, results=query_articles)
+
 if __name__ == '__main__':
     app.run()
