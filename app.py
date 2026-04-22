@@ -19,7 +19,10 @@ def about():
 @app.route('/article/<article_id>')
 def article(article_id):
     if article_id != "main":
-        article = next((a for a in all_articles["other-stories"] if str(a["id"]) == article_id), None)
+        if int(article_id) > len(all_articles["other-stories"]):
+            article = all_articles["main-headline"]
+        else:
+            article = next((a for a in all_articles["other-stories"] if str(a["id"]) == article_id), None)
     else:
         article = all_articles["main-headline"]
 
