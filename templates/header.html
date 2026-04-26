@@ -12,6 +12,9 @@
 							<li class="{{ 'active' if request.endpoint == 'about' else '' }}">
 								<a href="/about">About Us</a>
 							</li>
+							<li class="{{ 'active' if request.endpoint == 'puzzles' else '' }}">
+								<a href="/puzzles">Puzzles</a>
+							</li>
 						</ul>
 						<form action="/search" method="get" style="padding-top: 0.5rem; padding-right: 1rem;">
 							<input type="text" name="article_to_find">
