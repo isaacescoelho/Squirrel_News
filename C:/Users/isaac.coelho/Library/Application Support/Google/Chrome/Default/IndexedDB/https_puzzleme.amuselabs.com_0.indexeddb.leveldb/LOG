@@ -1,0 +1,13 @@
+2026/05/02-22:08:54.889 e9dd423 Reusing MANIFEST /Users/isaac.coelho/PycharmProjects/Squirrel-News/C:/Users/isaac.coelho/Library/Application Support/Google/Chrome/Default/IndexedDB/https_puzzleme.amuselabs.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/02-22:08:54.890 e9dd423 Recovering log #7
+2026/05/02-22:08:54.890 e9dd423 Reusing old log /Users/isaac.coelho/PycharmProjects/Squirrel-News/C:/Users/isaac.coelho/Library/Application Support/Google/Chrome/Default/IndexedDB/https_puzzleme.amuselabs.com_0.indexeddb.leveldb/000007.log 
+2026/05/02-22:08:54.920 e9dd423 Level-0 table #11: started
+2026/05/02-22:08:54.921 e9dd423 Level-0 table #11: 1004 bytes OK
+2026/05/02-22:08:54.922 e9dd423 Delete type=0 #7
+2026/05/02-22:08:54.922 e9dd423 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 293 : 1
+2026/05/02-22:08:54.922 e9dd423 Compacting 1@0 + 1@1 files
+2026/05/02-22:08:54.924 e9dd423 Generated table #12@0: 57 keys, 1549 bytes
+2026/05/02-22:08:54.924 e9dd423 Compacted 1@0 + 1@1 files => 1549 bytes
+2026/05/02-22:08:54.925 e9dd423 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/02-22:08:54.926 e9dd423 Delete type=2 #11
+2026/05/02-22:08:54.926 e9dd423 Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 293 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

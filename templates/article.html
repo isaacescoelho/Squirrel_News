@@ -9,37 +9,32 @@
 		<title>Squirrel News</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
 		<meta name="description" content="Squirrel News - The latest stories, all from your favorite furry journalist." />
 		<meta name="robots" content="index, follow" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-				{% include "header.html" %}
+			{% include "header.html" %}
 
-				<!-- Main -->
-					<div id="main">
+			<!-- Main -->
+			<div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">{{ article["date"] }}</span>
-									<h1>{{ article["title"] }}<br />
-									</h1>
-									<p>{{ article["subtitle"] }}</p>
-								</header>
-								<div class="image main"><img src='{{ "".join(article["image"].split()) }}"' alt="" /></div>
-								{{ article["body"] | safe }}
-							</section>
+				<section class="post">
+					<header class="major">
+						<span class="date">{{ article["date"] }}</span>
+						<h1>{{ article["title"] }}</h1>
+						<p>{{ article["subtitle"] }}</p>
+					</header>
+					<!-- Image URL is stripped of whitespace to handle API formatting quirks -->
+					<div class="image main"><img src='{{ "".join(article["image"].split()) }}' alt="" /></div>
+					{{ article["body"] | safe }}
+				</section>
 
-					</div>
+			</div>
 
-				<!-- Footer -->
-
-				<!-- Copyright -->
-					{% include "footer.html" %}
+			{% include "footer.html" %}

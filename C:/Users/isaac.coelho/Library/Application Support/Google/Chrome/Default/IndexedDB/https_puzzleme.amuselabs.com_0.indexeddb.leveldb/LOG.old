@@ -1,0 +1,8 @@
+2026/05/02-22:08:19.160 e9dcf68 Reusing MANIFEST /Users/isaac.coelho/PycharmProjects/Squirrel-News/C:/Users/isaac.coelho/Library/Application Support/Google/Chrome/Default/IndexedDB/https_puzzleme.amuselabs.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/02-22:08:19.161 e9dcf68 Recovering log #4
+2026/05/02-22:08:19.161 e9dcf68 Reusing old log /Users/isaac.coelho/PycharmProjects/Squirrel-News/C:/Users/isaac.coelho/Library/Application Support/Google/Chrome/Default/IndexedDB/https_puzzleme.amuselabs.com_0.indexeddb.leveldb/000004.log 
+2026/05/02-22:08:19.174 e9dcf73 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/05/02-22:08:34.947 e9dcf68 Level-0 table #8: started
+2026/05/02-22:08:34.951 e9dcf68 Level-0 table #8: 3160 bytes OK
+2026/05/02-22:08:34.952 e9dcf68 Delete type=0 #4
+2026/05/02-22:08:34.952 e9dcf68 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
